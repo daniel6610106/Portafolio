@@ -1,0 +1,188 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+/*header*/
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #033380;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c5b77;
+}
+
+header > h1 {
+  color: #fff;
+  font-size: 24px;
+  padding: 1rem;
+}
+
+header > nav {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+ul > li > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul > li > a:hover {
+  text-decoration: underline;
+  text-shadow:0 0 20px purple;
+  color: yellowgreen;
+}
+
+
+
+
+
+
+main {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e2f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: #f0f0f0;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #61dafb;
+}
+
+main p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+
+/*about me section*/
+
+.aboutme-container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #23234a;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  padding: 2.5rem 2rem;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutme-avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  
+}
+
+.aboutme-avatar {
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #61dafb;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.aboutme-info h2 {
+  color: #61dafb;
+  margin-top: 2rem;
+}
+
+.aboutme-projects, .aboutme-experience {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.aboutme-projects li, .aboutme-experience li {
+  background: #31316a;
+  margin-bottom: 0.7rem;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.aboutme-info a {
+  color: #61dafb;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .aboutme-container {
+    padding: 1rem 0.5rem;
+  }
+  .aboutme-avatar {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+
+
+/*footer*/
+
+
+footer {
+  background-color: #20232a;
+  color: #aaa;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+  font-size: 0.95rem;
+  align-items: flex-end;
+}
+
+footer a {
+  color: #61dafb;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}

@@ -1,0 +1,13 @@
+.App{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.App > Footer {
+    margin-top: auto;
+    background-color: #0c5b77;
+    color: #fff;
+    width: 100vw;
+    padding: 1rem;
+}
